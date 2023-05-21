@@ -18,10 +18,6 @@ class SignRecorder(object):
         # DataFrame storing the distances between the recorded sign & all the reference signs from the dataset
         self.reference_signs = reference_signs
 
-    def record(self):
-        # recording시작 - 시작 시점부터 데이터를 모은다
-
-        self.reference_signs["distance"].values[:] = 0
 
     def process_results(self, results) -> (str, bool):
        
@@ -34,8 +30,8 @@ class SignRecorder(object):
         # 2. 데이터가 충분하다면 계산 시작
             self.compute_distances()
 
-        if np.sum(self.reference_signs["distance"].values) == 0:
-            return ""
+        # if np.sum(self.reference_signs["distance"].values) == 0:
+        #     return ""
         return self._get_sign_predicted()
 
     def compute_distances(self):
@@ -84,6 +80,8 @@ class SignRecorder(object):
         sign_counter = Counter(sign_names).most_common()
         print("sign_counter")
         print(sign_counter)
+     
+        self.reference_signs["distance"].values[:] = 0
 
 
         predicted_sign, count = sign_counter[0]
