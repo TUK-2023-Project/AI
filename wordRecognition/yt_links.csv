@@ -1,17 +1,13 @@
 name,id,start_time,duration_time
-Oui,IRgxwlFahK4,,
-Bonjour,OrorTGDvdNQ,,
-Non,uF9MvYaEU1k,,
-Ça va,V7KM2UnfU2I,,
-S'il vous plaît,AYJoQCgUHvw,,
-Bonjour,rz3jw0_XXoc,00:00:02,00:00:02
-Oui,rz3jw0_XXoc,00:00:22,00:00:03
-S'il vous plaît,rz3jw0_XXoc,00:00:33,00:00:03
-Ça va,rz3jw0_XXoc,00:00:19,00:00:03
-Non,rz3jw0_XXoc,00:00:25,00:00:02
-Bonjour,zPOgFI6t1p0,00:00:01,00:00:01.200
-Ça va,zPOgFI6t1p0,00:00:03,00:00:02
-Oui,zPOgFI6t1p0,00:00:05,00:00:02
-Non,zPOgFI6t1p0,00:00:07,00:00:02
-Bonjour,irWEaNF6kmo,00:00:01,00:00:03
-Ça va,irWEaNF6kmo,00:00:04,00:00:03
+cat,SSqeLJLnefc,00:05:38,00:00:02
+cat,OXzFBMCmrQc,00:05:34,00:00:02
+bear,SSqeLJLnefc,00:05:03,00:00:02
+bear,K1wHr5Br9x0,00:00:04,00:00:02
+rabbit,SSqeLJLnefc,00:01:22,00:00:02
+elephant,OXzFBMCmrQc,00:01:18,00:00:02
+elephant,SSqeLJLnefc,00:04:12,00:00:01
+animal,OXzFBMCmrQc,00:00:24,00:00:02
+animal,SSqeLJLnefc,00:00:45,00:00:02
+cat,-UXnNUg3qsc,00:01:22,00:00:02
+bird,-UXnNUg3qsc,00:01:41,00:00:01
+dog,-UXnNUg3qsc,00:01:06,00:00:01
