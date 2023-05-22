@@ -3,7 +3,6 @@ import os
 import numpy as np
 import pickle as pkl
 import mediapipe as mp
-from utils.mediapipe_utils import mediapipe_detection
 
 
 def landmark_to_array(mp_landmark_list):
