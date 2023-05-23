@@ -8,12 +8,14 @@ from utils.landmark_utils import save_landmarks_from_video, load_array
 
 
 def load_dataset():
+    # 디렉토리를 순회하면서 ".mp4" 확장자를 가진 모든 파일의 이름을 찾아 리스트 생성
     videos = [
         file_name.replace(".mp4", "")
         for root, dirs, files in os.walk(os.path.join("data", "videos"))
         for file_name in files
         if file_name.endswith(".mp4")
     ]
+     # 디렉토리를 순회하면서 ".pickle" 확장자를 가진 모든 파일의 이름을 찾아 리스트 생성
     dataset = [
         file_name.replace(".pickle", "").replace("pose_", "")
         for root, dirs, files in os.walk(os.path.join("data", "dataset"))
@@ -21,7 +23,8 @@ def load_dataset():
         if file_name.endswith(".pickle") and file_name.startswith("pose_")
     ]
 
-    # Create the dataset from the reference videos
+  
+    # 데이터셋에는 포함되지 않지만 비디오 디렉토리에는 존재하는 파일들의 리스트를 생성.
     videos_not_in_dataset = list(set(videos).difference(set(dataset)))
     n = len(videos_not_in_dataset)
     if n > 0:
@@ -30,7 +33,7 @@ def load_dataset():
         for idx in tqdm(range(n)):
             save_landmarks_from_video(videos_not_in_dataset[idx])
 
-    return videos
+    return dataset
 
 
 def load_reference_signs(videos):
