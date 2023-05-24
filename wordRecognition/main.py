@@ -1,10 +1,15 @@
-from utils.dataset_utils import load_dataset, load_reference_signs
+from utils.dataset_utils import load_dataset, load_reference_signs , create_dataset
 from sign_recorder import SignRecorder
 
 
 
 if __name__ == "__main__":
-    # Create dataset of the videos where landmarks have not been extracted yet
+
+
+    # create_dataset() 비디오 기준으로 데이터셋 만들때 사용하는 함수 (주석을 풀어서 실행 후 다시 주석처리할것)
+     
+
+    # 데이터셋 정보를 가져옴 
     videos = load_dataset()
 
     # Create a DataFrame of reference signs (name: str, model: SignModel, distance: int)
@@ -37,4 +42,4 @@ if __name__ == "__main__":
 
     # 5. 웹소켓 연결 및 실제 api연동해보기
 
-    # 6. 영상을 기준으로 모델을 만드는 것 같은데 파일 기준으로 만들 수 있는지 찾아보기
+    # 6. 영상을 기준으로 모델을 만드는 것 같은데 파일 기준으로 만들 수 있는지 찾아보기 (O)
